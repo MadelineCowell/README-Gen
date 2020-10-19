@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  // Project name
   # ${data.project}
 
   ## DEVELOPER INFORMATION 
