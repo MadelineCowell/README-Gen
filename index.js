@@ -1,9 +1,8 @@
 const fs = require("fs")
 const path = require("path")
 const inquirer = require("inquirer")
+
 const generateMarkdown = require("./utils/generateMarkdown")
-
-
 
 
 
@@ -38,7 +37,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "install",
+        name: "dependencies",
         message: "What command should be run to install dependencies?",
         default: "npm i"
     },
@@ -55,7 +54,7 @@ const questions = [
     },
     {
         type: "input",
-        name: "repoCont",
+        name: "repoContribute",
         message: "What information does the user need to know to contribute to the repo?"
     }
 ];
